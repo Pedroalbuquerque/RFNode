@@ -4,7 +4,7 @@
 
 void JsonLoop( unsigned long interval){
   static uint32_t timer = 0;
-  char bug[200];
+  char buf[200];
 
   if(timer > millis()) timer= millis();
   if (timer == 0 || (millis()-timer > interval)) {
